@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #222;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.container {
+
+    width: 400px;
+    margin: 50px auto;
+
+
+
+}
+
+
+.ventilador {
+    width: 300px;
+    height: 300px;
+
+    margin: 30px auto;
+
+    background-color: #555;
+
+    border: 10px solid #888;
+
+    border-radius: 50%;
+}
+
+
+.grade {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background-color: #333;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+.helice {
+    position: absolute;
+
+    width: 35px;
+    height: 80px;
+
+    background-color:#ffffff
+    top: 50%;
+    left: 50%;
+
+    transform: translate() -50%, -50%;
+
+    background-color: #ddd;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transform-origin: center 80px;
+}
+.helice:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.helice:nth-child(2) {
+    transform: rotate(120deg);
+}
+
+.helice:nth-child(3) {
+    transform: rotate(240deg);
+}
+.centro {
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: #4A2635;
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 10;
+}
+
+
+#botao {
+    width: 130px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #444;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+#botao:hover {
+    background-color: #666;
+}
+
